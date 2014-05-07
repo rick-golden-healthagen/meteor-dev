@@ -76,7 +76,7 @@ Then, build your own Meteor container directly from this github repo. It will be
 
 Finally, run the container attached to a local Meteor source code directory (e.g. `/path/to/meteor/app`).
 
-    docker run -p 3000:3000 -t -i -v /path/to/meteor/app:/opt/application meteor-dev
+    docker run -p 3000:3000 -t -i -v /path/to/meteor/app:/opt/application -w /opt/application meteor-dev
 
 
 You can view the running Meteor application in a web browser at `http://127.0.0.1:3000`.
